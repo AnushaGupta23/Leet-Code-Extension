@@ -1,7 +1,7 @@
 {
-  "name": "extension",
-  "displayName": "extension",
-  "description": "",
+  "name": "leetcode-helper",
+  "displayName": "LeetCode Helper",
+  "description": "VS Code extension for LeetCode workflow automation and testcase management.",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.96.0"
@@ -9,14 +9,12 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onCommand:extension.showWebview"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
-      {
-        "command": "extension.helloWorld",
-        "title": "Hello World"
-      },
       {
         "command": "extension.showWebview",
         "title": "Show Webview"
